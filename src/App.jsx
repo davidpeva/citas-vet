@@ -6,12 +6,17 @@ import "./styles.scss";
 
 function App() {
   const [error, setError] = useState('');
+  const [nameError, setNameError] = useState('');
+  const [ageError, setAgeError] = useState('');
+  const [genderError, setGenderError] = useState('');
+  const [dateError, setDateError] = useState('');
+  const [ownerError, setOwnerError] = useState('');
   const [form, setForm] = useState({
     name: "",
-    email: "",
     age: "",
-    event: "",
+    gender: "",
     date: "",
+    owner: "",
   });
   const [users, setUsers] = useState([]);
 
@@ -21,20 +26,39 @@ function App() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const {name, email, age, event, date } = form
-    if (!name || !email || !age || !event || !date) {
-      setError('Falta un campo por llenar')
+    const { name, age, gender, date, owner } = form
+    if (!name || !age || !gender || !date || !owner) {
+      setError('Revisa los campos que te falta llenar.')
+
+      if (name.length < 3) {
+        setNameError('El nombre debe tener mas de 3 caracteres.');
+      } if (age < 1) {
+        setAgeError('La edad debe ser mayor de 1.');
+      } if (gender !== 'Macho' || gender !== 'Hembra') {
+        setGenderError('Debes escoger el genero.')
+      }  // Validación de fecha
+
+      const currentDate = new Date();
+      const selectedDate = new Date(date);
+      if (selectedDate > currentDate || selectedDate.getFullYear() > 2023) {
+        setDateError('Debes ingresar una fecha válida.');
+      }
+      if (owner.length < 3) {
+        setOwnerError('Debes de ingresar el nombre del dueño.');
+      }
+
       return
     }
+
     fetch('http://localhost:8000/users', {
       method: 'POST',
       body: JSON.stringify({
         id: window.crypto.randomUUID(),
         name,
-        email,
-        age: age,
-        event: event,
-        date
+        age,
+        gender,
+        date,
+        owner
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8'
@@ -42,7 +66,7 @@ function App() {
     })
 
     // setRegistrations([...registrations, form]);
-    setForm({ name: "", email: "", age: "", event: "", date: ""});
+    setForm({ name: "", age: "", gender: "", date: "", owner: "" });
   };
 
   useEffect(() => {
@@ -61,13 +85,18 @@ function App() {
         handleFormSubmit={handleFormSubmit}
         handleInputChange={handleInputChange}
         error={error}
+        nameError={nameError}
+        ageError={ageError}
+        genderError={genderError}
+        dateError={dateError}
+        ownerError={ownerError}
       />
       <section className="section">
         {users.map((registration) => (
           <Card
-            key={`${registration.date}${registration.name}`} 
+            key={`${registration.date}${registration.name}`}
             registration={registration}
-          /> 
+          />
         ))}
       </section>
     </div>
