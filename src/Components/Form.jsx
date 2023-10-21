@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Form = ({ form, handleFormSubmit, handleInputChange, error }) => {
+const Form = ({ form, handleFormSubmit, handleInputChange, error, nameError, ageError, genderError, dateError, ownerError }) => {
     return (
         <form className="form-card" onSubmit={handleFormSubmit}>
             <input
@@ -10,13 +10,7 @@ const Form = ({ form, handleFormSubmit, handleInputChange, error }) => {
                 value={form.name}
                 onChange={handleInputChange}
             />
-            <input
-                type="email"
-                name="email"
-                placeholder="Correo electrónico"
-                value={form.email}
-                onChange={handleInputChange}
-            />
+            {nameError && <p className="error">{nameError}</p>}
             <input
                 type="number"
                 name="age"
@@ -24,20 +18,36 @@ const Form = ({ form, handleFormSubmit, handleInputChange, error }) => {
                 value={form.age}
                 onChange={handleInputChange}
             />
-            <input
+            {ageError && <p className="error">{ageError}</p>}
+            <select
                 type="text"
-                name="event"
-                placeholder="Nombre del evento"
-                value={form.event}
+                name="gender"
+                placeholder="Género"
+                value={form.gender}
                 onChange={handleInputChange}
-            />
+            >
+                <option value="Null">Null</option>
+                <option value="Macho">Macho</option>
+                <option value="Hembra">Hembra</option>
+            </select>
+            {genderError && <p className="error">{genderError}</p>}
             <input
                 type="date"
                 name="date"
-                placeholder="Fecha del evento"
+                placeholder="Día de la cita"
                 value={form.date}
                 onChange={handleInputChange}
             />
+            {dateError && <p className="error">{dateError}</p>}
+            <input
+                type="text"
+                name="owner"
+                placeholder="Nombre del dueño"
+                value={form.owner}
+                onChange={handleInputChange}
+            />
+            {ownerError && <p className="error">{ownerError}</p>}
+            <hr />
             {error && <p className="error">{error}</p>}
             <button type="submit">Registrar</button>
         </form>
@@ -50,9 +60,9 @@ Form.propTypes = {
     form: PropTypes.shape({
         name: PropTypes.string.isRequired,
         age: PropTypes.string.isRequired,
-        email: PropTypes.string.isRequired,
-        event: PropTypes.string.isRequired,
+        gender: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
+        owner: PropTypes.string.isRequired,
     }),
     error: PropTypes.string.isRequired,
 };
