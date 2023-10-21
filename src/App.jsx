@@ -36,9 +36,12 @@ function App() {
         setAgeError('La edad debe ser mayor de 1.');
       } if (gender !== 'Macho' || gender !== 'Hembra') {
         setGenderError('Debes escoger el genero.')
-      }
-      if (!date) {
-        setDateError('Debes ingresar una fecha menor a la actual.')
+      }  // Validación de fecha
+
+      const currentDate = new Date();
+      const selectedDate = new Date(date);
+      if (selectedDate > currentDate || selectedDate.getFullYear() > 2023) {
+        setDateError('Debes ingresar una fecha válida.');
       }
       if (owner.length < 3) {
         setOwnerError('Debes de ingresar el nombre del dueño.');
