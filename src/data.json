@@ -63,6 +63,54 @@
       "gender": "Macho",
       "date": "2023-02-11",
       "owner": "juan"
+    },
+    {
+      "id": "cddb1af5-faa1-4cf5-8bd6-44d9fc479d2e",
+      "name": "Niña",
+      "age": "5",
+      "gender": "Hembra",
+      "date": "2023-10-21",
+      "owner": "karina"
+    },
+    {
+      "id": "4fe6c64c-e60f-4574-a221-0841662b5b72",
+      "name": "Duque",
+      "age": "3",
+      "gender": "Macho",
+      "date": "2023-10-31",
+      "owner": "karina"
+    },
+    {
+      "id": "c7f2c9a1-bbd7-4793-ab85-827c20e2b01f",
+      "name": "duki",
+      "age": "1",
+      "gender": "Macho",
+      "date": "2023-10-21",
+      "owner": "karina"
+    },
+    {
+      "id": "3208b142-8b2e-4fd6-9a5b-01292466fc04",
+      "name": "duki",
+      "age": "2",
+      "gender": "Hembra",
+      "date": "2023-10-12",
+      "owner": "karina"
+    },
+    {
+      "id": "64a06223-9904-4c8a-bca9-1a25f0819315",
+      "name": "duki",
+      "age": "1",
+      "gender": "Hembra",
+      "date": "2023-10-01",
+      "owner": "karina"
+    },
+    {
+      "id": "742d67ae-62f2-46f7-a42c-88ba9f0e6fb9",
+      "name": "fd",
+      "age": "4",
+      "gender": "Macho",
+      "date": "2023-10-19",
+      "owner": "tttt"
     }
   ]
 }

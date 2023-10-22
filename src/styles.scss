@@ -1,6 +1,6 @@
 .app {
     display: flex;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     background-color: #d3d3d3;
@@ -9,23 +9,37 @@
     .form-card {
         background-color: #fff;
         margin: 10px;
-        padding: 20px;
+        padding: 50px;
+        align-items: center;
         border-radius: 10px;
         box-shadow: 5px 5px 5px gray;
+
+        select {  
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
         input {
             display: block;
             margin-bottom: 10px;
+            width: 100%;
             padding: 10px;
             border-radius: 5px;
             border: 1px solid #ddd;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
         }
         
         .error {
             color: #ff3d3d;
             font-size: 12px;
-            padding: 0;
-            margin: 0;
+            margin-top: 5px;
         }
 
         button {

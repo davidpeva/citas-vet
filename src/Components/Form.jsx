@@ -3,26 +3,32 @@ import PropTypes from "prop-types";
 const Form = ({ form, handleFormSubmit, handleInputChange, error, nameError, ageError, genderError, dateError, ownerError }) => {
     return (
         <form className="form-card" onSubmit={handleFormSubmit}>
+            <h2>Solicitud de Citas Veterinario</h2>
+            
+            
+            <label htmlFor="name">Nombre de la mascota</label>
             <input
                 type="text"
                 name="name"
-                placeholder="Nombre"
+                placeholder="Nombre de la mascota"
                 value={form.name}
                 onChange={handleInputChange}
             />
             {nameError && <p className="error">{nameError}</p>}
+            <label htmlFor="age">Edad de la mascota</label>
             <input
                 type="number"
                 name="age"
-                placeholder="Edad"
+                placeholder="Edad de la mascota"
                 value={form.age}
                 onChange={handleInputChange}
             />
             {ageError && <p className="error">{ageError}</p>}
+            <label htmlFor="gender">Sexo de la mascota</label>
             <select
                 type="text"
                 name="gender"
-                placeholder="Género"
+                placeholder="Sexo de la mascota"
                 value={form.gender}
                 onChange={handleInputChange}
             >
@@ -31,14 +37,16 @@ const Form = ({ form, handleFormSubmit, handleInputChange, error, nameError, age
                 <option value="Hembra">Hembra</option>
             </select>
             {genderError && <p className="error">{genderError}</p>}
+            <label htmlFor="date">Seleccione fecha de la cita</label>
             <input
                 type="date"
                 name="date"
-                placeholder="Día de la cita"
                 value={form.date}
                 onChange={handleInputChange}
             />
             {dateError && <p className="error">{dateError}</p>}
+            
+            <label htmlFor="owner">Nombre del dueño</label>
             <input
                 type="text"
                 name="owner"
