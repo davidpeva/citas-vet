@@ -111,6 +111,14 @@
       "gender": "Hembra",
       "date": "2023-10-11",
       "owner": "Simon"
+    },
+    {
+      "id": "886e1490-2696-4225-9e49-c8ea9fddb7a6",
+      "name": "Niña",
+      "age": "7",
+      "gender": "Hembra",
+      "date": "2024-02-25",
+      "owner": "Karina"
     }
   ]
 }
