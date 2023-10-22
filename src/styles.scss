@@ -40,6 +40,9 @@
             color: #ff3d3d;
             font-size: 12px;
             margin-top: 5px;
+            padding: 0;
+            margin: 0;
+            margin: 15px 0px;
         }
 
         button {
@@ -60,9 +63,11 @@
     }
 
     .section {
-        width: 600px;
+        width: 100%;
+        margin: 25px 30px;
         display: flex;
         flex-flow: wrap;
+        justify-content: center;
 
         .registration-card {
             background-color: white;
@@ -74,11 +79,14 @@
             max-width: max-content;
     
             h2 {
-                color: blue
+                color: black;
+                font-size: 18px;
             }
     
             p, h3, h4 {
-                color: #333;
+                color: #6a6a6a;
+                font-size: 16px;
+                font-weight: 200;
             }
         }
     }
