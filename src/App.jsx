@@ -91,6 +91,7 @@ function App() {
         dateError={dateError}
         ownerError={ownerError}
       />
+      <h2>Calendario de citas:</h2>
       <section className="section">
         {users.map((registration) => (
           <Card

@@ -63,6 +63,22 @@
       "gender": "Macho",
       "date": "2023-02-11",
       "owner": "juan"
+    },
+    {
+      "id": "9b8799ed-22d9-445a-9837-d5afb7ad4bac",
+      "name": "Simon Orozco",
+      "age": "7",
+      "gender": "Macho",
+      "date": "2023-10-04",
+      "owner": "Simon"
+    },
+    {
+      "id": "a87ddcdb-a29c-4031-be06-3568039a5121",
+      "name": "Simon Orozco",
+      "age": "5",
+      "gender": "Hembra",
+      "date": "2023-10-11",
+      "owner": "Simon"
     }
   ]
 }

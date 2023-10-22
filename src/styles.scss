@@ -1,6 +1,6 @@
 .app {
     display: flex;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     background-color: #d3d3d3;
@@ -26,6 +26,7 @@
             font-size: 12px;
             padding: 0;
             margin: 0;
+            margin: 15px 0px;
         }
 
         button {
@@ -46,9 +47,11 @@
     }
 
     .section {
-        width: 600px;
+        width: 100%;
+        margin: 25px 30px;
         display: flex;
         flex-flow: wrap;
+        justify-content: center;
 
         .registration-card {
             background-color: white;
@@ -60,11 +63,14 @@
             max-width: max-content;
     
             h2 {
-                color: blue
+                color: blue;
+                font-size: 18px;
             }
     
             p, h3, h4 {
                 color: #333;
+                font-size: 16px;
+                font-weight: 200;
             }
         }
     }
