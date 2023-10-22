@@ -40,7 +40,7 @@ function App() {
 
       const currentDate = new Date();
       const selectedDate = new Date(date);
-      if (selectedDate > currentDate || selectedDate.getFullYear() > 2023) {
+      if (selectedDate > currentDate || selectedDate.getFullYear() > 2023 || !date) {
         setDateError('Debes ingresar una fecha válida.');
       }
       if (owner.length < 3) {
@@ -67,6 +67,12 @@ function App() {
 
     // setRegistrations([...registrations, form]);
     setForm({ name: "", age: "", gender: "", date: "", owner: "" });
+
+    setNameError("");
+    setAgeError("");
+    setGenderError("");
+    setDateError("");
+    setOwnerError("");
   };
 
   useEffect(() => {
