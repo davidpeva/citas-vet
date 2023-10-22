@@ -1,46 +1,6 @@
 {
   "users": [
     {
-      "id": "f14c98e7-72b8-4a85-b561-03114b317497",
-      "name": "david",
-      "email": "davidpeva@gmail.com",
-      "age": "33",
-      "event": "tgl",
-      "date": "2023-10-21"
-    },
-    {
-      "id": "e294c4ec-0faa-4a3b-b7b1-60f5f0f5b033",
-      "name": "firu",
-      "age": "3",
-      "gender": "macho",
-      "date": "0002-02-02",
-      "owner": "juan"
-    },
-    {
-      "id": "4d201750-e29a-45a2-b479-2cb0437709f8",
-      "name": "d4",
-      "age": "",
-      "gender": "",
-      "date": "",
-      "owner": ""
-    },
-    {
-      "id": "7888a455-9da8-4a97-b2d1-7ffd19e51dc4",
-      "name": "dd",
-      "age": "33",
-      "gender": "macho",
-      "date": "1023-10-23",
-      "owner": "juan"
-    },
-    {
-      "id": "ede734d3-0e97-420c-9f6d-56700fbbf36c",
-      "name": "firu",
-      "age": "",
-      "gender": "",
-      "date": "",
-      "owner": ""
-    },
-    {
       "id": "ebf27879-94f8-4fd8-96ef-115edd6f6a2e",
       "name": "firu",
       "age": "55",
@@ -64,61 +24,61 @@
       "date": "2023-02-11",
       "owner": "juan"
     },
-    {
-      "id": "cddb1af5-faa1-4cf5-8bd6-44d9fc479d2e",
-      "name": "Niña",
-      "age": "5",
-      "gender": "Hembra",
-      "date": "2023-10-21",
-      "owner": "karina"
-    },
-    {
-      "id": "4fe6c64c-e60f-4574-a221-0841662b5b72",
-      "name": "Duque",
-      "age": "3",
-      "gender": "Macho",
-      "date": "2023-10-31",
-      "owner": "karina"
-    },
-    {
-      "id": "c7f2c9a1-bbd7-4793-ab85-827c20e2b01f",
-      "name": "duki",
-      "age": "1",
-      "gender": "Macho",
-      "date": "2023-10-21",
-      "owner": "karina"
-    },
-    {
-      "id": "3208b142-8b2e-4fd6-9a5b-01292466fc04",
-      "name": "duki",
-      "age": "2",
-      "gender": "Hembra",
-      "date": "2023-10-12",
-      "owner": "karina"
-    },
-    {
-      "id": "64a06223-9904-4c8a-bca9-1a25f0819315",
-      "name": "duki",
-      "age": "1",
-      "gender": "Hembra",
-      "date": "2023-10-01",
-      "owner": "karina"
-    },
-    {
-      "id": "a87ddcdb-a29c-4031-be06-3568039a5121",
-      "name": "Simon Orozco",
-      "age": "5",
-      "gender": "Hembra",
-      "date": "2023-10-11",
-      "owner": "Simon"
-    },
-    {
-      "id": "886e1490-2696-4225-9e49-c8ea9fddb7a6",
-      "name": "Niña",
-      "age": "7",
-      "gender": "Hembra",
-      "date": "2024-02-25",
-      "owner": "Karina"
-    }
+  {
+    "id": "cddb1af5-faa1-4cf5-8bd6-44d9fc479d2e",
+    "name": "Niña",
+    "age": "5",
+    "gender": "Hembra",
+    "date": "2023-10-21",
+    "owner": "karina"
+  },
+  {
+    "id": "4fe6c64c-e60f-4574-a221-0841662b5b72",
+    "name": "Duque",
+    "age": "3",
+    "gender": "Macho",
+    "date": "2023-10-31",
+    "owner": "karina"
+  },
+  {
+    "id": "c7f2c9a1-bbd7-4793-ab85-827c20e2b01f",
+    "name": "duki",
+    "age": "1",
+    "gender": "Macho",
+    "date": "2023-10-21",
+    "owner": "karina"
+  },
+  {
+    "id": "3208b142-8b2e-4fd6-9a5b-01292466fc04",
+    "name": "duki",
+    "age": "2",
+    "gender": "Hembra",
+    "date": "2023-10-12",
+    "owner": "karina"
+  },
+  {
+    "id": "64a06223-9904-4c8a-bca9-1a25f0819315",
+    "name": "duki",
+    "age": "1",
+    "gender": "Hembra",
+    "date": "2023-10-01",
+    "owner": "karina"
+  },
+  {
+    "id": "a87ddcdb-a29c-4031-be06-3568039a5121",
+    "name": "Simon Orozco",
+    "age": "5",
+    "gender": "Hembra",
+    "date": "2023-10-11",
+    "owner": "Simon"
+  },
+  {
+    "id": "886e1490-2696-4225-9e49-c8ea9fddb7a6",
+    "name": "Niña",
+    "age": "7",
+    "gender": "Hembra",
+    "date": "2024-02-25",
+    "owner": "Karina"
+  }
   ]
 }
